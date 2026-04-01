@@ -1,8 +1,8 @@
 API-Mobile | Sistema Mercado Dany
 
 Integrantes:
-Catarina Klein
-Lucas Schlei
+Catarina Klein,
+Lucas Schlei,
 Murilo Kerschbaum
 
 Sobre o Projeto:
