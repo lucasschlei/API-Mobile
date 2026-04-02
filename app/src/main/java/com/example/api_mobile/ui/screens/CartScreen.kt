@@ -20,14 +20,14 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.mercadodani.data.cart.CartItem
-import com.example.mercadodani.data.cart.CartManager
-import com.example.mercadodani.data.session.UserSession
-import com.example.mercadodani.ui.components.AppBottomNavigation
-import com.example.mercadodani.ui.components.AppTopBar
+import com.example.api_mobile.data.cart.CartItem
+import com.example.api_mobile.data.cart.CartManager
+import com.example.api_mobile.data.session.UserSession
+import com.example.api_mobile.ui.components.AppBottomNavigation
+import com.example.api_mobile.ui.components.AppTopBar
+import com.example.api_mobile.ui.viewmodel.CartViewModel
+import com.example.api_mobile.ui.viewmodel.CheckoutState
 import com.example.mercadodani.ui.theme.*
-import com.example.mercadodani.ui.viewmodel.CartViewModel
-import com.example.mercadodani.ui.viewmodel.CheckoutState
 
 @Composable
 fun CartScreen(

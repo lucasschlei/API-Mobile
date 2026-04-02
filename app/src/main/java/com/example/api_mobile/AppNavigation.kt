@@ -6,9 +6,13 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.mercadodani.ui.screens.*
+import com.example.api_mobile.ui.screens.CartScreen
+import com.example.api_mobile.ui.screens.CategoryOffersScreen
+import com.example.api_mobile.ui.screens.HomeScreen
+import com.example.api_mobile.ui.screens.LoginScreen
+import com.example.api_mobile.ui.screens.RegisterScreen
+import com.example.api_mobile.ui.viewmodel.AuthViewModel
 import com.example.mercadodani.ui.theme.MercadoDaniTheme
-import com.example.mercadodani.ui.viewmodel.AuthViewModel
 
 sealed class Screen(val route: String) {
     object Login          : Screen("login")

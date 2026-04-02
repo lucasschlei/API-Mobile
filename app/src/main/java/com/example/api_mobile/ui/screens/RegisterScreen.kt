@@ -15,12 +15,12 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.mercadodani.ui.components.AppBottomNavigation
-import com.example.mercadodani.ui.components.AppTextField
-import com.example.mercadodani.ui.components.AppTopBar
+import com.example.api_mobile.ui.components.AppBottomNavigation
+import com.example.api_mobile.ui.components.AppTextField
+import com.example.api_mobile.ui.components.AppTopBar
+import com.example.api_mobile.ui.viewmodel.AuthState
+import com.example.api_mobile.ui.viewmodel.AuthViewModel
 import com.example.mercadodani.ui.theme.*
-import com.example.mercadodani.ui.viewmodel.AuthState
-import com.example.mercadodani.ui.viewmodel.AuthViewModel
 
 @Composable
 fun RegisterScreen(

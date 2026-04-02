@@ -3,8 +3,8 @@ package com.example.api_mobile.ui.viewmodel
 import androidx.compose.runtime.*
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.mercadodani.data.cart.CartItem
-import com.example.mercadodani.data.repository.CartRepository
+import com.example.api_mobile.data.cart.CartItem
+import com.example.api_mobile.data.repository.CartRepository
 import kotlinx.coroutines.launch
 
 class CartViewModel : ViewModel() {
