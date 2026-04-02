@@ -1,12 +1,12 @@
 package com.example.api_mobile.data.repository
 
 import android.util.Log
-import com.example.mercadodani.data.cart.CartItem
-import com.example.mercadodani.data.cart.CartManager
-import com.example.mercadodani.data.network.AdicionarCarrinhoRequest
-import com.example.mercadodani.data.network.CriarPedidoRequest
-import com.example.mercadodani.data.network.RetrofitClient
-import com.example.mercadodani.data.session.UserSession
+import com.example.api_mobile.data.cart.CartItem
+import com.example.api_mobile.data.cart.CartManager
+import com.example.api_mobile.data.network.AdicionarCarrinhoRequest
+import com.example.api_mobile.data.network.CriarPedidoRequest
+import com.example.api_mobile.data.network.RetrofitClient
+import com.example.api_mobile.data.session.UserSession
 
 class CartRepository {
 

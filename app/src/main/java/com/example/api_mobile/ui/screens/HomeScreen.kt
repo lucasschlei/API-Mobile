@@ -24,13 +24,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.mercadodani.data.cart.CartItem
-import com.example.mercadodani.data.cart.CartManager
-import com.example.mercadodani.data.session.UserSession
-import com.example.mercadodani.ui.components.AppBottomNavigation
-import com.example.mercadodani.ui.components.AppTopBar
+import com.example.api_mobile.data.cart.CartItem
+import com.example.api_mobile.data.cart.CartManager
+import com.example.api_mobile.data.session.UserSession
+import com.example.api_mobile.ui.components.AppBottomNavigation
+import com.example.api_mobile.ui.components.AppTopBar
+import com.example.api_mobile.ui.viewmodel.CartViewModel
 import com.example.mercadodani.ui.theme.*
-import com.example.mercadodani.ui.viewmodel.CartViewModel
 
 data class Category(val name: String, val dbName: String, val color: Color)
 data class PromoProduct(val id: Int, val timeRange: String, val name: String, val description: String, val price: Double, val color: Color)

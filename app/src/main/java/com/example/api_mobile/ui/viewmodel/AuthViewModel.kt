@@ -3,9 +3,9 @@ package com.example.api_mobile.ui.viewmodel
 import androidx.compose.runtime.*
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.mercadodani.data.repository.AuthRepository
-import com.example.mercadodani.data.repository.Result
-import com.example.mercadodani.data.session.UserSession
+import com.example.api_mobile.data.repository.AuthRepository
+import com.example.api_mobile.data.repository.Result
+import com.example.api_mobile.data.session.UserSession
 import kotlinx.coroutines.launch
 
 class AuthViewModel : ViewModel() {

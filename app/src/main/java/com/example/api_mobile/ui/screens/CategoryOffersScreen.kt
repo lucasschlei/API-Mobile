@@ -1,6 +1,5 @@
 package com.example.api_mobile.ui.screens
 
-import coil.compose.AsyncImage
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
@@ -22,13 +21,15 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.mercadodani.data.cart.CartItem
-import com.example.mercadodani.data.network.RetrofitClient
-import com.example.mercadodani.data.session.UserSession
-import com.example.mercadodani.ui.components.AppBottomNavigation
-import com.example.mercadodani.ui.components.AppTopBar
+import coil.compose.AsyncImage
+import com.example.api_mobile.data.cart.CartItem
+import com.example.api_mobile.data.network.ProdutoResponseItem
+import com.example.api_mobile.data.network.RetrofitClient
+import com.example.api_mobile.data.session.UserSession
+import com.example.api_mobile.ui.components.AppBottomNavigation
+import com.example.api_mobile.ui.components.AppTopBar
+import com.example.api_mobile.ui.viewmodel.CartViewModel
 import com.example.mercadodani.ui.theme.*
-import com.example.mercadodani.ui.viewmodel.CartViewModel
 
 fun categoryColor(categoria: String): Color = when (categoria) {
     "Alim. Basicos" -> Color(0xFFD4A96A)
@@ -52,7 +53,7 @@ fun CategoryOffersScreen(
     onNavigateToLogin: () -> Unit = {},
     cartViewModel: CartViewModel = viewModel()
 ) {
-    var products by remember { mutableStateOf<List<com.example.mercadodani.data.network.ProdutoResponseItem>>(emptyList()) }
+    var products by remember { mutableStateOf<List<ProdutoResponseItem>>(emptyList()) }
     var isLoading by remember { mutableStateOf(true) }
     var errorMsg by remember { mutableStateOf<String?>(null) }
     var showLoginDialog by remember { mutableStateOf(false) }
@@ -132,7 +133,7 @@ fun CategoryOffersScreen(
 
 @Composable
 fun ApiProductCard(
-    product: com.example.mercadodani.data.network.ProdutoResponseItem,
+    product: ProdutoResponseItem,
     color: Color,
     cartViewModel: CartViewModel = viewModel(),
     onNeedLogin: () -> Unit = {}

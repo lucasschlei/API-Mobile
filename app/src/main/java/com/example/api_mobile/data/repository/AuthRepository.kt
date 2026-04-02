@@ -1,6 +1,10 @@
 package com.example.api_mobile.data.repository
 
-import com.example.mercadodani.data.network.*
+import com.example.api_mobile.data.network.CadastroRequest
+import com.example.api_mobile.data.network.CadastroResponse
+import com.example.api_mobile.data.network.LoginRequest
+import com.example.api_mobile.data.network.LoginResponse
+import com.example.api_mobile.data.network.RetrofitClient
 
 sealed class Result<out T> {
     data class Success<T>(val data: T) : Result<T>()
